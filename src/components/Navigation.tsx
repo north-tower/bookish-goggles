@@ -1,17 +1,18 @@
 
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
     <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-white text-xl font-bold">
+          <Link to="/" className="text-white text-xl font-bold">
             diffco
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-300 hover:text-white transition-colors">About us</a>
+            <Link to="/about" className="text-gray-300 hover:text-white transition-colors">About us</Link>
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Cases</a>
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Services</a>
             <a href="#" className="text-gray-300 hover:text-white transition-colors">Solutions</a>
