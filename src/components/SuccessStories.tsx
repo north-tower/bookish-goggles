@@ -33,7 +33,7 @@ const SuccessStories = () => {
               </h3>
               
               <p className="text-purple-100 mb-8 leading-relaxed">
-                The Diffco team studied FlashGrid's product and marketing strategy to make sure all of our requirements were addressed.
+                The Aeres   team studied FlashGrid's product and marketing strategy to make sure all of our requirements were addressed.
               </p>
               
               <div className="flex items-center gap-4 mb-8">

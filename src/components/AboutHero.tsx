@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const AboutHero = () => {
@@ -19,14 +18,13 @@ const AboutHero = () => {
         </div>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
-          We are expert professionals. We can turn your business idea into a real software solution.
+          Company Profile: Aeres Technologies
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-          Diffco specializes in custom software development, creating and evolving solutions and products 
-          to fuel business growth. With decades of development experience, a deep understanding of global markets, 
-          and unmatched technical expertise, our team has everything you need to create great{" "}
-          <span className="text-white font-semibold">web service platforms, mobile applications, SaaS, and AI.</span>
+          Aeres Technologies is a dynamic tech company based in Nairobi, Kenya, specializing in innovative mobile and web-based solutions. We leverage cutting-edge technology to build scalable, user-friendly applications that solve real-world problems for businesses and consumers across Africa and beyond.<br/><br/>
+          <span className="text-white font-semibold">Mission:</span> To empower businesses and individuals through innovative, reliable, and affordable digital solutions that drive efficiency and growth.<br/>
+          <span className="text-white font-semibold">Vision:</span> To be a leading technology solutions provider in Africa, recognized for excellence in software development and digital innovation.
         </p>
         
         <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold px-8 py-3 rounded-lg text-lg">

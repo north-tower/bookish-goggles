@@ -1,22 +1,26 @@
-
 import { MessageCircle, Users, Gem } from "lucide-react";
 
 const AboutValues = () => {
   const values = [
     {
       icon: MessageCircle,
-      title: "Clear communication",
-      description: "We build relationships based on integrity and trust, delivering on our promises and maintaining clear communication at all times."
+      title: "Expert Team",
+      description: "Skilled developers, designers, and tech enthusiasts dedicated to delivering excellence."
     },
     {
       icon: Users,
-      title: "Customer-Centric Approach", 
-      description: "We prioritize our clients' success, understand your unique needs, and deliver tailored solutions that drive your business growth."
+      title: "Client-Centric Approach", 
+      description: "Tailored solutions to meet unique business needs and ensure client satisfaction."
     },
     {
       icon: Gem,
-      title: "Innovation and Excellence",
-      description: "As a team on the cutting edge of technology trends, we consistently deliver innovative, high-quality solutions."
+      title: "Agile Methodology",
+      description: "Fast, adaptive, and efficient project execution for optimal results."
+    },
+    {
+      icon: Gem,
+      title: "Affordable & Scalable",
+      description: "Cost-effective solutions for startups and enterprises, designed to grow with your business."
     }
   ];
 

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@fontsource/inter/variable.css';
+@import '@fontsource/outfit/variable.css';
+@import '@fontsource/space-grotesk/variable.css';
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
@@ -17,11 +21,13 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 13% 91%;      /* #e5e7eb */
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 210 77% 95%;    /* #e3f2fd */
     --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --tertiary: 42 96% 54%;      /* #f59e0b */
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -101,5 +107,16 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'InterVariable', 'Inter', Arial, sans-serif;
+  }
+
+  nav, .navigation {
+    font-family: 'InterVariable', 'Inter', Arial, sans-serif;
+  }
+
+  h1, h2, h3, .headline {
+    font-family: 'OutfitVariable', 'Outfit', 'Space Grotesk Variable', 'Space Grotesk', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
   }
 }

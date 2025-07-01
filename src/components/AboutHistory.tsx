@@ -1,23 +1,22 @@
-
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const AboutHistory = () => {
   const historyData = [
     {
-      year: "2023",
-      description: "We gain traction in the AI market with generative pre-trained transformers (GPT) and large language model (LLM)"
+      year: "2024",
+      description: "Aeres Technologies founded in Nairobi, Kenya, with a mission to empower Africa through digital innovation."
     },
     {
-      year: "2022", 
-      description: "Over 1,000 projects completed successfully for more 400 clients."
+      year: "2025",
+      description: "Launched first suite of custom software and mobile solutions for local startups and SMEs."
     },
     {
-      year: "2021",
-      description: "Exploring NFT market and leveraging blockchain technologies for businesses"
+      year: "2026",
+      description: "Expanded services to include cloud, DevOps, and UI/UX design for enterprise clients."
     },
     {
-      year: "2020",
-      description: "Our service provision starts to encompass projects and SaaS solutions",
+      year: "Future",
+      description: "Driving digital transformation and growth for businesses across Africa and beyond.",
       isGrayed: true
     }
   ];

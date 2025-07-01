@@ -1,4 +1,3 @@
-
 const SolutionsHero = () => {
   return (
     <section className="pt-32 pb-16 bg-white relative">
@@ -7,10 +6,7 @@ const SolutionsHero = () => {
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold text-gray-900 mb-8">Our solutions</h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              In Diffco we turn your business needs and product ideas into digital solutions, 
-              starting from mobile applications to sophisticated AI-driven solutions. All of our 
-              services are accompanied by well-organized management and product 
-              consulting expertise.
+              At Aeres Technologies, we turn your business needs and product ideas into digital solutions—ranging from bespoke web and mobile applications to sophisticated AI-driven platforms. Our services include custom software development, mobile and web apps, UI/UX design, and cloud & DevOps solutions, all delivered with a client-centric, agile approach.
             </p>
           </div>
           
