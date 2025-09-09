@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
+import DeveloperSignature from './DeveloperSignature';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -217,6 +218,16 @@ const Navigation = () => {
             ))}
           </div>
 
+          {/* Developer Signature - appears when scrolled */}
+          {isScrolled && (
+            <div className="hidden lg:block absolute top-2 right-2 z-40">
+              <DeveloperSignature 
+                variant="minimal" 
+                className="opacity-70 hover:opacity-100 transition-all duration-500 transform hover:scale-110"
+              />
+            </div>
+          )}
+
           {/* Enhanced CTA Button & Mobile Menu */}
           <div className="flex items-center space-x-4">
             {/* Enhanced CTA Button */}
@@ -333,6 +344,19 @@ const Navigation = () => {
         </div>
       </div>
 
+      {/* Floating Developer Signature - follows mouse */}
+      <div 
+        className="fixed top-4 left-4 z-50 pointer-events-none opacity-0 hover:opacity-100 transition-opacity duration-500"
+        style={{
+          transform: `translate(${mousePosition.x * 0.1}px, ${mousePosition.y * 0.1}px)`,
+        }}
+      >
+        <DeveloperSignature 
+          variant="badge" 
+          className="transform rotate-12 hover:rotate-0 transition-transform duration-700"
+        />
+      </div>
+
       {/* Enhanced animations */}
       <style>{`
         @keyframes shimmer {
@@ -342,6 +366,15 @@ const Navigation = () => {
         
         .animate-shimmer {
           animation: shimmer 2s infinite;
+        }
+        
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-10px) rotate(2deg); }
+        }
+        
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
         }
       `}</style>
     </nav>

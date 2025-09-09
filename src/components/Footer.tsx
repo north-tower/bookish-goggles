@@ -1,6 +1,8 @@
+import DeveloperSignature from './DeveloperSignature';
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="bg-gray-900 text-white py-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
@@ -47,8 +49,30 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400">
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm text-gray-400 relative">
           <p>&copy; 2025 Aeres Technologies. All rights reserved.</p>
+          
+          {/* Developer signature in copyright section */}
+          <div className="mt-4 flex justify-center">
+            <DeveloperSignature 
+              variant="minimal" 
+              className="opacity-60 hover:opacity-100 transition-opacity duration-300"
+            />
+          </div>
+        </div>
+        
+        {/* Floating developer signature watermark */}
+        <div className="absolute bottom-4 right-4 opacity-20 hover:opacity-40 transition-opacity duration-500">
+          <DeveloperSignature 
+            variant="badge" 
+            className="transform rotate-3 hover:rotate-0 transition-transform duration-500"
+          />
+        </div>
+        
+        {/* Animated background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
       </div>
     </footer>
