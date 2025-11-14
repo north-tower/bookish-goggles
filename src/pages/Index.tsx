@@ -307,6 +307,8 @@ const Index = () => {
         </ul>
       </section>
     </div>
+    </div>
+          
   );
 };
 
