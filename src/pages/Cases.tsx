@@ -301,7 +301,7 @@ const Cases = () => {
           <li>Positive attitude with passion for technology and commitment to excellence</li>
         </ul>
       </section>
-    </div>
+    </div></div>
   );
 };
 
